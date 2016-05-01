@@ -3,11 +3,13 @@
 from distutils.core import setup
 
 setup(
-    name='Docuit',
+    name='docuit',
     version='0.1',
     description='Read specific parts from README.md files',
     author='Tobias Wilken',
     author_email='tooangel@tooangel.de',
+    license='AGPL',
     scripts=['docuit.py'],
-    install_requires=['docopt>=0.6.2']
+    install_requires=['docopt>=0.6.2'],
+    url='https://github.com/TooAngel/docuit'
 )

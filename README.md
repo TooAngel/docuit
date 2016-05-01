@@ -18,7 +18,7 @@ the steps right away.
  
 Using docuit makes sure all repositories have a similar README structure, simplifies
 using of the code and with the right setup can also simplify the continues deploy
-process: `docuit.py deploy --exec` 
+process: `docuit.py deploy --exec`.
  
 
 
