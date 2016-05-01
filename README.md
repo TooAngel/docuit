@@ -1,5 +1,8 @@
 # Docuit
 
+[![Build Status](https://travis-ci.org/TooAngel/docuit.svg?branch=master)](https://travis-ci.org/TooAngel/docuit)
+[![Dependency Status](https://www.versioneye.com/user/projects/57265586a0ca35004baf713c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57265586a0ca35004baf713c)
+
 Docuit is a tool which makes sure your README stays up to date
 and simplifies getting the needed parts out of the README.
 
