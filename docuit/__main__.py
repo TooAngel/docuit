@@ -14,8 +14,9 @@ import os
 import sys
 from subprocess import Popen
 
-from docopt import docopt
 from _version import __version__
+
+from docopt import docopt
 
 
 section_filter = {
