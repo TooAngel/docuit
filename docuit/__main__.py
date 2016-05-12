@@ -15,6 +15,7 @@ import sys
 from subprocess import Popen
 
 from docopt import docopt
+from _version import __version__
 
 
 section_filter = {
@@ -116,7 +117,7 @@ def check(readme_file_name, execute):
 
 
 def main():
-    arguments = docopt(__doc__, version='README parser 0.1')
+    arguments = docopt(__doc__, version='docuit {}'.format(__version__))
 
     methods = {
         'dev': dev,

@@ -3,10 +3,11 @@
 from distutils.core import setup
 
 from setuptools import find_packages
+from docuit._version import __version__
 
 setup(
     name='docuit',
-    version='0.1',
+    version=__version__,
     description='Read specific parts from README.md files',
     author='Tobias Wilken',
     author_email='tooangel@tooangel.de',
