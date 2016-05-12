@@ -14,14 +14,14 @@ over and over again.
 Docuit parses the README for the needed part prints them out ord can execute
 the steps right away.  
 
- - `docuit.py check` to make sure all necessary parts exist and prints out what
+ - `docuit check` to make sure all necessary parts exist and prints out what
    is missing.
- - `docuit.py build|test|run|deploy` Prints the content of the section.
+ - `docuit build|test|run|deploy` Prints the content of the section.
  - `--exec` flag will execute the steps.
  
 Using docuit makes sure all repositories have a similar README structure, simplifies
 using of the code and with the right setup can also simplify the continues deploy
-process: `docuit.py deploy --exec`.
+process: `docuit deploy --exec`.
  
 
 
@@ -35,8 +35,8 @@ process: `docuit.py deploy --exec`.
 
 ## Run
 
-`docuit.py` 
+`docuit`
 
 ## Deploy
 
-No deploy currently, upload to pypi in the future.
+`python setup.py sdist upload`
