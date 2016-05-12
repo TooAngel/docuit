@@ -3,7 +3,7 @@
 """Docuit
 
 Usage:
-  docuit.py (run|test|deploy|build|check) [<file>] [--exec]
+  docuit (dev|run|test|deploy|build|check) [<file>] [--exec]
 
 Options:
   -h --help     Show this screen.
@@ -18,6 +18,7 @@ from docopt import docopt
 
 
 section_filter = {
+    'dev': ['## Dev'],
     'deploy': ['## Deploy', 'Deploy'],
     'run': ['## Run'],
     'test': ['## Test', '## Running the tests'],
@@ -43,6 +44,9 @@ def section(readme_file_name, section, execute):
                 if statement.startswith('-'):
                     background = True
                     statement = statement.lstrip('-').strip()
+                elif statement.startswith('*'):
+                    background = True
+                    statement = statement.lstrip('*').strip()
 
                 if len(statement) == 0:
                     continue
@@ -88,6 +92,10 @@ def build(readme_file_name, execute):
     section(readme_file_name, 'build', execute)
 
 
+def dev(readme_file_name, execute):
+    section(readme_file_name, 'dev', execute)
+
+
 def check(readme_file_name, execute):
     headlines = {}
     with open(readme_file_name) as readme_file:
@@ -111,6 +119,7 @@ def main():
     arguments = docopt(__doc__, version='README parser 0.1')
 
     methods = {
+        'dev': dev,
         'run': run,
         'test': test,
         'deploy': deploy,
