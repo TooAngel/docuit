@@ -15,7 +15,7 @@ fi
 if [[ $changed_doc_files == "" ]]; then
   if [[ $changed_files == $changed_json_files ]]; then
     echo "Only json files updated, okayish, maybe lokalise"
-    exit 1
+    exit 0
   else
     echo "No documentation changes found => fail"
     exit 1
