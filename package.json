@@ -1,0 +1,24 @@
+{
+  "name": "docuit",
+  "version": "1.0.4",
+  "description": "Enforce documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TooAngel/docuit.git"
+  },
+  "author": "Tobias Wilken",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/TooAngel/docuit/issues"
+  },
+  "homepage": "https://github.com/TooAngel/docuit",
+  "bin": {
+    "check_for_doc_changes.sh" : "./check_for_doc_changes.sh",
+    "docuit" : "./check_for_doc_changes.sh"
+  },
+  "files": ["check_for_doc_changes.sh"]
+}
