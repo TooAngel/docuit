@@ -13,7 +13,7 @@ if [[ $changed_files == "" ]]; then
 fi
 
 if [[ $changed_doc_files == "" ]]; then
-  if [[ $changed_files == $changed_json_files ]]; then
+  if [[ `echo $changed_files | wc -l` == `echo $changed_json_files | wc -l` ]]; then
     echo "Only json files updated, okayish, maybe lokalise"
     exit 0
   else
